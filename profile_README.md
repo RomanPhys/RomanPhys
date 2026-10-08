@@ -5,19 +5,19 @@ Telegram: [@cloudlector](https://t.me/cloudlector) · iavakaev.rd@phystech.edu
 
 ## Проекты
 
-**[Avito — детекция ботов по поведенческим логам](https://github.com/RomanPhys/Avito)**
+**[Avito - детекция ботов по поведенческим логам](https://github.com/RomanPhys/Avito)**
 113 признаков из сырых событий внутри суточного окна, градиентный бустинг, временная валидация.
 `Precision@Recall≥0.7` = **0.839** на скрытом тесте при бейзлайне 0.099. Отдельно разобрано,
 как зрелость пула признака расходится между обучением и инференсом, и почему оценка метрики
 ступенчата: пять `random_state` дают бит в бит одно значение, а вариация произвольных констант
 сглаживания - разброс 0.02.
 
-**[ab-testing-lab — анализ A/B-экспериментов](https://github.com/RomanPhys/ab-testing-lab)**
+**[ab-testing-lab - анализ A/B-экспериментов](https://github.com/RomanPhys/ab-testing-lab)**
 SQL-витрины, CUPED с регрессионной корректировкой, дельта-метод для ratio-метрик, дашборд.
 Методы проверены на 2000 Monte Carlo-экспериментов: CUPED снижает дисперсию выручки на **27 %**,
 наивный тест ratio-метрики даёт 13.9 % ложных срабатываний вместо заявленных 5 %, дельта-метод - 5.9 %.
 
-**[digital-image-processing-analysis — деконволюция](https://github.com/RomanPhys/digital-image-processing-analysis)**
+**[digital-image-processing-analysis - деконволюция](https://github.com/RomanPhys/digital-image-processing-analysis)**
 Фильтр Винера и алгоритм Ричардсона–Люси с нуля на NumPy/FFT плюс слепые модификации: степенной
 спектральный prior, останов по принципу невязки Морозова, TV-регуляризация. На 36 сценариях
 обходят классические методы с oracle-подбором параметров в **33 случаях из 36**.
